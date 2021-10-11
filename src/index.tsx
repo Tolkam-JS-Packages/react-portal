@@ -15,6 +15,7 @@ export default class Portal extends PureComponent<IProps> {
     public constructor(props: IProps) {
         super(props);
         this.element = this.props.element || document.createElement('span');
+        this.element.setAttribute('style', 'display:contents');
     }
 
     /**
