@@ -1,6 +1,5 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { PureComponent } from 'react';
+import { HTMLProps, PureComponent } from 'react';
+import { createPortal } from 'react-dom';
 
 export default class Portal extends PureComponent<IProps> {
 
@@ -38,7 +37,7 @@ export default class Portal extends PureComponent<IProps> {
     public render() {
         const that = this;
 
-        return ReactDOM.createPortal(
+        return createPortal(
             that.props.children,
             that.element,
         );
@@ -54,7 +53,7 @@ export default class Portal extends PureComponent<IProps> {
     }
 }
 
-interface IProps extends React.HTMLAttributes<Portal> {
+interface IProps extends HTMLProps<Portal> {
     // parent element to append portal to
     to: HTMLElement,
 

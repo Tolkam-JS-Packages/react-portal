@@ -1,17 +1,16 @@
 {
     "name": "@tolkam/react-portal",
-    "version": "1.0.0",
-    "description": "Portals for react components",
-    "main": "src/index.tsx",
+    "description": "Portals for React components",
+    "browser": "src/index.tsx",
+    "types": "src/index.tsx",
     "license": "UNLICENSED",
-    "private": true,
-    "dependencies": {
-        "react": "^16.5",
-        "react-dom": "^16.5"
+    "peerDependencies": {
+        "react": "^16.14",
+        "react-dom": "^16.14"
     },
     "devDependencies": {
-        "tslib": "^1.9.3",
-        "@types/react": "^16.4",
-        "@types/react-dom": "^16.0"
+        "@types/react": "^16.14",
+        "@types/react-dom": "^16.9.0",
+        "tslib": "^1.9.3"
     }
 }
