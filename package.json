@@ -1,6 +1,7 @@
 {
     "name": "@tolkam/react-portal",
     "description": "Portals for React components",
+    "version": "0.0.0",
     "browser": "src/index.tsx",
     "types": "src/index.tsx",
     "license": "UNLICENSED",
